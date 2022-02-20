@@ -1,0 +1,9 @@
+.fs-16       /* pegando uma fonte e usando o tamanho baseado no word */
+{    
+    font-size: 16pt;
+}
+
+a
+{ /* colocando cursor de ponto*/
+    cursor:pointer;
+}
