@@ -10,14 +10,16 @@ import { UserLogin } from '../model/UserLogin';
 export class AuthService {
 
   constructor(
-    private http: HttpClient) { }
+    private http:HttpClient) { }
 
   entrar(userLogin: UserLogin): Observable<UserLogin>  {
-    return this.http.post<UserLogin>('http://localhost:8080/usuario/cadastrar', userLogin)
+    return this.http.post<UserLogin>('http://localhost:8080/usuario/login', userLogin)
   }
 
   cadastrar(user: User):Observable<User>  {
-    return this.http.post<User>('http://localhost:8080/usuario/logar', user)
+    return this.http.post<User>('http://localhost:8080/usuario/cadastrar', user)
   }
+
+
 }
 
